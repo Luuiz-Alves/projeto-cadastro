@@ -13,18 +13,26 @@
         <section id="login">
             <div id="imagem">
                 <!-- Aqui vai a imagem -->
-                <h1>Comece de graça e receba ofertas interessantes...</h1>
+                <h1>Comece de graça e receba ofertas interessantes.</h1>
             </div>
             <div id="inicio">
                 <h1>Vamos começar.</h1>
                 <h2>Já tem uma conta? <a href="">Log in.</a></h2>
                 <div class="botao">
-                    <button><img src="imagens/google.png" alt="" width="30px">Conectar com Google</button>
-                    <button id="facebook"><img src="imagens/facebook.png" alt="" width="29+px">Conectar com Facebook</button>
-                </div> <br><hr>
+                    <button><img src="imagens/google.png" alt="" width="25px">Conectar com Google</button>
+                    <button id="facebook"><img src="imagens/facebook.png" alt="" width="22px">Conectar com Facebook</button>
+                </div>
+                <p id="ou">Ou</p>
                 <div id="formulario">
                     <form action="login.php" method="post">
-
+                        <p>E-mail:</p>
+                        <input type="email" name="nemail" id="iemail" class="teste">
+                        <p>Senha:</p>
+                        <input type="password" name="npassword" id="ipassword">
+                        <p>Senha:</p>
+                        <input type="password" name="npassword" id="ipassword"><br><br>
+                        <input type="checkbox" name="" id=""> Eu concordo com os <a href="#">termos de uso</a>. <br><br>
+                        <input type="submit" value="Enviar">
                     </form>
                 </div>
             </div>
