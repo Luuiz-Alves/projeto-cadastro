@@ -3,7 +3,10 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Lobster', cursive;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 /*
 Cores: 
@@ -69,12 +72,11 @@ main {
 }
 
 #inicio {
-    padding: 10px;
+    padding: 5px;
 }
 
 #inicio > h2 {
-    padding-top: 5px;
-    font-size: 0.9em;
+    font-size: 0.7em;
     color: rgba(128, 128, 128, 0.61);
     padding-bottom: 15px;
 }
@@ -94,7 +96,7 @@ main {
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    padding: 0 30px;
+    padding: 0 1px;
 }
 
 button {
@@ -114,13 +116,14 @@ button {
 }
 
 button:hover {
-    background-color: rgba(77, 77, 77, 0.637);
+    background-color: rgba(77, 77, 77, 0.281);
     color: white;
 }
 
 #facebook {
     background-color: rgb(66, 103, 178);
     color: var(--cor0);
+    padding: 5px;
 }
 
 #facebook:hover {
@@ -129,21 +132,51 @@ button:hover {
 
 #ou {
     text-align: center;
-    padding: 5px 0px;
-
 }
 
 #formulario {
     
 }
 
-p {
-    font-size: 18px;
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 3px;
 }
 
-.teste {
-    padding: 5px;
+p {
+    font-size: 16px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+.ctexto {
+    padding: 6px 5px;
     border: solid 1px var(--cor2);
     border-radius: 5px;
-    margin: auto;
+}
+
+form > p > a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+form > p > a:hover {
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+#submit {
+    padding: 5px;
+    background-color: var(--cor3);
+    border: solid 1px var(--cor1);
+    border-radius: 5px;
+    color: var(--cor0);
+
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: var(--cor4);
+    text-decoration: underline;
 }
