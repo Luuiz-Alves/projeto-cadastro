@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SVWLG</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="imagens/Goescat-Macaron-Text-editor.ico" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -17,21 +17,29 @@
             </div>
             <div id="inicio">
                 <h1>Vamos começar.</h1>
-                <h2>Já tem uma conta? <a href="">Log in.</a></h2>
+
+                <h2>Já tem uma conta? <a href="#">Log in.</a></h2>
+
                 <div class="botao">
                     <button><img src="imagens/google.png" alt="" width="25px">Conectar com Google</button>
                     <button id="facebook"><img src="imagens/facebook.png" alt="" width="22px">Conectar com Facebook</button>
                 </div>
+
                 <p id="ou">Ou</p>
+
                 <div id="formulario">
                     <form action="login.php" method="post">
-                        <p>E-mail:</p>
-                        <input type="email" name="nemail" id="iemail" class="ctexto">
-                        <p>Senha:</p>
-                        <input type="password" name="npassword" id="ipassword" class="ctexto">
-                        <p>Repetir senha:</p>
-                        <input type="password" name="npassword" id="ipassword" class="ctexto">
-                        <p><input type="checkbox" name="" id=""> Eu concordo com os <a href="#">termos de uso</a>.</p>
+                        <p><label for="iemail">E-mail:</label></p>
+                        <input class="ctexto" type="email" name="email" id="iemail">
+
+                        <p><label for="isenha">Senha:</label></p>
+                        <input class="ctexto" type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="Mínimo 8 letras">
+
+                        <p><label for="isenha">Repetir senha:</label></p>
+                        <input class="ctexto" type="password" name="senha" id="isenha" required minlength="8" maxlength="20">
+
+                        <p><input type="checkbox" name="cbox" id="icbox"> Eu concordo com os <a href="#">termos de uso</a>.</p>
+
                         <input id="submit" type="submit" value="Enviar">
                     </form>
                 </div>
